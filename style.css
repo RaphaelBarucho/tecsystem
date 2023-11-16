@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+ #navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+} 
+
+#navbar-nav{
+    display: flex;
+    width: 100%;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+#navbar-ul{
+    display: flex;
+    width: 100%;
+}
+#div-itens-navbar{
+    display: flex;
+    width: 100%;
+    background-color: #ebf7f8;
+}
+
+.itens-navbar{
+    display: flex;
+    margin: 0 5px 0 5px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    color: #000;
+}
+
+#id-mostrar-funci{
+    margin-left: 5px;
+}
+nav ul li a {
+    text-decoration: none;
+}
+
+#inicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ebf7f8;
+}
+
+#a-inicio{
+    margin-left: 10px; 
+    color: #000;
+}
+
+#funcionarios-div li{
+    margin-left: 5px;
+    padding: 0.5px 0 0.5px 0;
+}
+
+#div-mo-funci{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ebf7f8;
+}
+
+#funcionarios-div li p, #id-mostrar-funci, #a-inicio {
+    font-family: 'Open Sans';
+}
+#div-total-form{
+    display: flex;
+    justify-content: center;
+}
+#div-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1px #000;
+    border-radius: 25px;
+    padding: 10px;
+}
+#div-tabela{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+#cadastro-p-form{
+    margin-bottom: 10px;
+}
+ #myform{
+    padding: 10px 25px 10px 25px; 
+} 
+
+.form-group {
+    margin-bottom: 20px;
+  }
+.inputsform{
+    border-radius: 25px;
+    border: solid 0.1px #000;
+}
+#button-cadastro{
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+}
+#div-button-form{
+    display: flex;
+    justify-content: center;
+}
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 5px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .th-div-tabela{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+  }
+

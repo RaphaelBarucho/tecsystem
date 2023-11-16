@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Agrandir-Regular;
+    src: url(./fonts/agrandir/Agrandir-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #49708a;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+#div-header {
+    display: flex;
+    align-items: center;
+    background-color: #93ADBF; 
+    margin-top: 50px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 25px;
+} 
+#h1-div-header{
+    font-family: Agrandir-Regular;
+    font-size: 53.8px;
+}
+#div-header-msg{
+    margin-top: 5px;
+    font-family: Agrandir-Regular;
+}
+
+#img-div-header{
+        width: 100px; /* define a largura desejada */
+        height: 100px; /* define a altura desejada */
+}
+main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#div-main{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.div-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background: transparent;
+    border: solid 0px transparent;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEC BRASIL </title>
+    <link rel="stylesheet" href="funcionarios.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="logo">
+        <h2>A mudança começa em você!</h2>
+    </div>
+    <div class="container">
+        <div class="title">
+            <span> Funcionários </span> 
+        </div>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Nome</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Alice Manula da Silva</td>
+                <td class="more-edit">
+                    <a href="#">Mostrar Mais</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Bernardo Ferreira de Andrade</td>
+                <td class="more-edit">
+                    <a href="#">Mostrar Mais</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Carlos Eduardo de Oliveira</td>
+                <td class="more-edit">
+                    <a href="#">Mostrar Mais</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Doralice Fernandes Machado</td>
+                <td class="more-edit">
+                    <a href="#">Mostrar Mais</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Felipe Teixeira Gabriel de Andrade</td>
+                <td class="more-edit">
+                    <a href="#">Mostrar Mais</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+        </table>
+
+        <!-- Detalhes Doralice -->
+        <div class="details">
+            <div class="info">
+                <span><strong>Nome:</strong> Doralice Fernandes Machado</span>
+                <span><strong>Função de trabalho (cargo):</strong> Analista</span>
+            </div>
+            <div class="info">
+                <span><strong>Data de nascimento:</strong> 15/05/1997</span>
+                <span><strong>Telefone:</strong> (44) 97695-4512</span>
+            </div>
+            <div class="info salary-field">
+                <span><strong>Salário:</strong> R$ 5.000,00</span>
+                <span class="lock-icon" onclick="showAlert()">🔒</span>
+            </div>
+        </div>
+
+        <!-- Detalhes Felipe -->
+        <div class="details">
+            <div class="info">
+                <span><strong>Nome:</strong> Felipe Teixeira Gabriel de Andrade</span>
+                <span><strong>Função de trabalho (cargo):</strong> Analista</span>
+            </div>
+            <div class="info">
+                <span><strong>Data de nascimento:</strong> 25/09/1995</span>
+                <span><strong>Telefone:</strong> (44) 97664-4512</span>
+            </div>
+            <div class="info salary-field">
+                <span><strong>Salário:</strong> R$ 5.000,00</span>
+                <span class="lock-icon" onclick="showAlert()">🔒</span>
+            </div>
+        </div>
+        <a href="inicio.html">
+            <button class="save-btn">Salvar</button>
+        </a>
+    </div>
+
+    <!-- Modal de Alerta -->
+    <div id="alert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeAlert()">&times;</span>
+            <p>Você não tem autorização para mudar esse campo, fale com o gerente ou digite o que for pedido.</p>
+            <form id="auth-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script> // Função para exibir o alerta modal
+        function showAlert() {
+            const modal = document.getElementById('alert-modal');
+            modal.style.display = 'flex';
+        }
+        
+        // Função para fechar o alerta modal
+        function closeAlert() {
+            const modal = document.getElementById('alert-modal');
+            modal.style.display = 'none';
+        }
+        
+        // Fecha o modal ao clicar fora dele
+        window.onclick = function(event) {
+            const modal = document.getElementById('alert-modal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+        </script>
+
+</body>
+</html>

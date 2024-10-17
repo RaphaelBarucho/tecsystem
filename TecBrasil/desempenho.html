@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEC BRASIL</title>
+    <link rel="stylesheet" href="desempenho.css">
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="logo">
+        <h2>A mudança começa em você!</h2>
+    </div>
+    <div class="container">
+        <div class="title">
+            <span> Desempenho </span>
+        </div>
+        <table id="performance-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Funcionário</th>
+                    <th>Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Linhas de funcionários serão inseridas dinamicamente -->
+            </tbody>
+        </table>
+
+        <!-- Exemplo de adicionar um novo funcionário -->
+        <button onclick="addEmployee('Gabriella Maria da Silva', 950)">Adicionar Novo Funcionário</button>
+    </div>
+
+    <script> 
+        // Array de funcionários com suas pontuações iniciais
+let employees = [
+    { id: 1, name: "Bernardo Ferreira de Andrade", points: 5500 },
+    { id: 2, name: "Alice Manula da Silva", points: 4560 },
+    { id: 3, name: "Doralice Fernandes Machado", points: 2500 },
+    { id: 4, name: "Felipe Teixeira Gabriel de Andrade", points: 1550 },
+    { id: 5, name: "Carlos Eduardo de Oliveira", points: 1100 },
+    { id: 6, name: "Gabriella Maria da Silva", points: 950 },
+    { id: 7, name: "Helena Luiza Lima Medeiros", points: 500 }
+];
+
+// Função para atualizar e renderizar a tabela
+function updateTable() {
+    const tableBody = document.querySelector("#performance-table tbody");
+    tableBody.innerHTML = ""; // Limpa o conteúdo da tabela
+
+    // Ordena os funcionários por pontuação (decrescente)
+    employees.sort((a, b) => b.points - a.points);
+
+    // Popula a tabela com os funcionários ordenados
+    employees.forEach((employee, index) => {
+        const row = document.createElement("tr");
+
+        const positionCell = document.createElement("td");
+        positionCell.textContent = index + 1;
+
+        const nameCell = document.createElement("td");
+        nameCell.textContent = employee.name;
+
+        const pointsCell = document.createElement("td");
+        pointsCell.textContent = employee.points;
+
+        row.appendChild(positionCell);
+        row.appendChild(nameCell);
+        row.appendChild(pointsCell);
+        tableBody.appendChild(row);
+    });
+}
+
+// Função para adicionar pontos a um funcionário
+function addPoints(employeeId) {
+    const employee = employees.find(emp => emp.id === employeeId);
+    if (employee) {
+        employee.points += 100; // Incrementa 100 pontos (ou a quantidade desejada)
+        updateTable(); // Atualiza a tabela
+    }
+}
+
+// Função para adicionar um novo funcionário
+function addEmployee(name, points) {
+    const newId = employees.length + 1;
+    employees.push({ id: newId, name: name, points: points });
+    updateTable(); // Atualiza a tabela
+}
+
+// Inicializa a tabela ao carregar a página
+updateTable();
+
+    </script>
+</body>
+</html>

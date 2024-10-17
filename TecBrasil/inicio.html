@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEC BRASIL</title>
+    <link rel="stylesheet" href="inicio.css">
+ <script>
+        function goToFuncionarios() {
+            window.location.href = 'funcionarios.html'; // Abre a página de funcionários
+        }
+
+        function goToDesempenho() {
+            window.location.href = 'desempenho.html'; // Abre a página de desempenho
+        }
+
+        function goToEquipe() {
+            window.location.href = 'facaparte.html'; // Abre a página de faça parte da equipe
+        } 
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="logo">
+        <h2>A mudança começa em você!</h2>
+    </div>
+    <div class="container">
+        <div class="button-box">
+            <button onclick="goToDesempenho()">
+                <img src="desempenho.png" alt="Desempenho">
+            </button>
+            <p>Desempenho</p>
+        </div>
+        <div class="button-box">
+            <button onclick="goToEquipe()">
+                <img src="facaparte.png" alt="Faça parte da equipe">
+            </button>
+            <p>Faça parte da equipe</p>
+        </div>
+        <div class="button-box">
+            <button onclick="goToFuncionarios()">
+                <img src="funcionarios.png" alt="Funcionários">
+            </button>
+            <p>Funcionários</p>
+        </div>
+    </div>
+</body>
+</html>

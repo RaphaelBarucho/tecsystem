@@ -1,0 +1,90 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d9e7f1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #7c9aaf;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    background-color: #9eb1c7;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.title span {
+    color: #2f3e4b;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #9eb1c7;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #e6ebf0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.logo {
+    width: 200px;
+    /* Altere o caminho da imagem conforme necessário */
+}
+
+
+.header {
+    background-color: #728a9c;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    color: #2f3e4b;
+    font-weight: normal;
+    margin-top: 10px;
+    font-style: italic;
+}

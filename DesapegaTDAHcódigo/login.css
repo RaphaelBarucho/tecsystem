@@ -1,0 +1,27 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+}
+
+h1 {
+    font-size: 24px; /* Tamanho do título */
+}
+
+input {
+    transition: border-color 0.3s; /* Animação suave na borda do input */
+}
+
+input:focus {
+    border-color: #ff4c4c; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Personalizando links */
+a {
+    text-decoration: underline; /* Sublinhado para links */
+}
+
+a:hover {
+    color: #ff4c4c; /* Cor ao passar o mouse sobre links */
+}

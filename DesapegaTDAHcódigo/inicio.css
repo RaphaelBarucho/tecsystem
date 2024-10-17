@@ -1,0 +1,50 @@
+
+.progress-bar-container {
+    width: 16rem; /* 64 Tailwind width */
+    height: 1.5rem; /* 6 Tailwind height */
+    background-color: white; /* Cor de fundo da barra */
+    border-radius: 9999px; /* Arredondar completamente a barra */
+    overflow: hidden; /* Esconder a parte que excede */
+    position: relative; /* Posicionamento para a barra de progresso */
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #f472b6; /* Cor da barra de progresso */
+    border-radius: 9999px; /* Arredondar completamente a barra de progresso */
+    width: 50%; /* Ajuste a largura para simular o progresso */
+    transition: width 0.3s ease; /* Animação ao mudar o progresso */
+}
+
+img {
+    max-width: 100%; /* A imagem ocupará no máximo 100% da largura do seu contêiner */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 10px; /* Arredonda as bordas da imagem */
+    margin-bottom: 1rem; /* Espaço abaixo da imagem */
+}
+
+
+.inicio {
+    background-color: #be5c98; /* Cor de fundo (verde) */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno (vertical e horizontal) */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background-color 0.3s ease; /* Animação para a mudança de cor */
+    margin-top: 20px; /* Espaço acima do botão (ajuste conforme necessário) */
+}
+
+/* Efeito ao passar o mouse */
+.inicio:hover {
+    background-color: #d264c5; /* Cor de fundo ao passar o mouse */
+}
+
+.inicio:focus {
+    outline: none; /* Remove o contorno padrão ao focar */
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.6); /* Sombra ao focar */
+}

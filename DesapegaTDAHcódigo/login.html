@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o CSS externo -->
+</head>
+<body class="bg-white flex items-center justify-center min-h-screen">
+    <div class="w-80 bg-white rounded-lg shadow-lg p-6">
+        <div class="bg-pink-700 rounded-t-lg flex justify-center p-4">
+            <img alt="Cartoon character with pink hair reading a book" class="w-24 h-24" src="https://storage.googleapis.com/a1aa/image/flpitw6v1sz3WqxAzI6XyhsJ4tYwk6neyfGNjdHGGfkQs3ecC.jpg"/>
+        </div>
+        <form class="space-y-4 mt-4">
+            <div>
+                <label class="block text-black font-bold" for="email">Email</label>
+                <input class="w-full border border-pink-700 rounded-lg p-2 mt-1" id="email" type="email"/>
+            </div>
+            <div>
+                <label class="block text-black font-bold" for="password">Senha</label>
+                <input class="w-full border border-pink-700 rounded-lg p-2 mt-1" id="password" type="password"/>
+                <a class="text-sm text-black mt-1 inline-block" href="#">Esqueci minha senha.</a>
+            </div>
+            <button class="w-full bg-pink-700 text-white font-bold py-2 rounded-lg" type="submit">ENTRAR</button>
+            <button class="w-full bg-blue-500 text-white font-bold py-2 rounded-lg flex items-center justify-center" type="button">
+                <img alt="Google logo" class="w-5 h-5 mr-2" src="https://storage.googleapis.com/a1aa/image/MGMH7ww0hTbEIN5YfEIrp4syhAXTIcAvnm1wa6vvqOVj92zJA.jpg"/>
+                Logar com o Google
+            </button>
+        </form>
+        <div class="text-center mt-4">
+            <a class="text-black" href="#">Cadastra-se</a>
+        </div>
+    </div>
+</body>
+</html>
